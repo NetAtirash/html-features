@@ -1,0 +1,77 @@
+/* Basic gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: 0.5s;
+  }
+  .gallery img:hover {
+    border-radius: 8px;
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  }
+  
+  /* The Modal (hidden by default) */
+ .modal {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding: 24px 0;
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    max-height: 80%; /* Limit height to viewport */
+    object-fit: contain; /* Ensure the entire image is visible */
+  }
+  
+  /* Caption Text (optional) */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; /* Adjust as needed */
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
